@@ -1,0 +1,63 @@
+%exemplo
+
+x = linspace(0, 2*pi, 100);
+fx = sin(x);
+plot(x,fx)
+xlabel("xx")
+ylabel("yy")
+legend("funcao seno")
+title("bueda fixe")
+grid("on")
+hold on 
+plot(x, cos(x))
+savefig("Aula01/figurafixe.fig")
+
+hold off
+%% 
+x = linspace(-2*pi, 0, 1e5);
+fx = sin(x).*exp(x);
+plot(x,fx, "r.", "LineWidth", 3)
+axis([-8 0 -0.5 0.8])
+%% 
+
+w = linspace(0,2*pi,100);
+f = exp(1j*w);
+plot(f)
+axis square
+%% 
+w = linspace(0,2*pi,1000);
+f = sin(4*w).*exp(1j*w);
+plot(f)
+axis square
+hold on
+f = exp(1j*w);
+plot(f)
+f = sin(3*w).*exp(1j*w);
+plot(f)
+f = sin(6*w).*exp(1j*w);
+plot(f)
+f = sin(2*w).*exp(1j*w);
+plot(f)
+f = sin(13*w).*exp(1j*w);
+plot(f)
+f = sin(33*w).*exp(1j*w);
+plot(f)
+
+%% 
+x=linspace(-2,2);
+y=linspace(-2,2);
+[xx,yy]=meshgrid(x,y);
+f = exp(-xx.^2-yy.^2);
+surf(xx,yy,f)
+
+shading interp
+%% 
+x = linspace(0,2*pi,250);
+plot(x,sin(x))
+hold on 
+
+output = TALOR(x,7);
+plot(x,output)
+
+
+%% 

@@ -1,0 +1,7 @@
+function [output] = TALOR(x,N)
+%UNTITLED2 Summary of this function goes here
+%   Detailed explanation goes here
+output = 0;
+for i = 1:N
+    output = output + (x.^i/factorial(i)).*sin(i*pi/2);
+end
