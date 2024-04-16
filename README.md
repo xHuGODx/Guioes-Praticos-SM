@@ -1,6 +1,6 @@
-#Project-MAS-Portify
+#Guioes Praticos SM
 
-**Projeto de MAS 2022-2023**
+**Guioes Praticos SM 2022-2023 (e testes)**
 
 **Contact:**
 
